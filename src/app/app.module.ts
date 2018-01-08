@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { GenreComboComponent } from './genre-combo/genre-combo.component';
 import { ComboService } from './service/combo/combo.service';
 import { ComboRemoteService } from './service/remote/combo-remote.service';
+import { CapitalizePipe } from './pipe/capitalize.pipe';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -23,7 +24,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    GenreComboComponent
+    GenreComboComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,
