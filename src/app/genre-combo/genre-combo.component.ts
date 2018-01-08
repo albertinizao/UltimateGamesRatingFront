@@ -29,4 +29,8 @@ export class GenreComboComponent implements OnInit {
     return this.translate.get(this.translateKeyPrefix + key).map(val => val == this.translateKeyPrefix + key ? key: val);
   }
 
+  isOnlyEmpty():boolean{
+    return this.getGenres()[0]==this.emptyKey;
+  }
+
 }

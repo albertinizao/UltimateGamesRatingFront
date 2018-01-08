@@ -7,7 +7,8 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class ComboRemoteService {
-  public url: string = "http://localhost:8080/combo";
+  // public url: string = "http://localhost:8080/combo";
+  public url: string = "https://ultimate-games-rating.herokuapp.com/combo";
   public genre_url: string = "/genre";
 
   constructor(
@@ -15,14 +16,11 @@ export class ComboRemoteService {
   ) { }
 
   getGenres(): Observable<any> {
-    return this.http.get(this.url + this.genre_url).map(res => {
-      console.log("http ok");
-      return res;
-    }).catch(error => {
-      console.log("ERROR");
-      console.log(error);
-      return error;
-    });
+    return this.http.get(this.url + this.genre_url);
+  }
+
+  getGeneration(): Observable<any> {
+    return this.http.get(this.url + this.genre_url);
   }
 
 }

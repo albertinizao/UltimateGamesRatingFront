@@ -1,6 +1,6 @@
 <div>
   <span>{{ 'GAME.FIELDS.GENRE.NAME' | translate}}: </span>
   <select  [(ngModel)]="genre">
-    <option *ngFor="let singleCombo of getGenres()" value="singleCombo">{{translateGenre(singleCombo) | async | capitalize}}</option>
+    <option *ngFor="let singleCombo of getGenres()" value="singleCombo" [disabled]="isOnlyEmpty()">{{translateGenre(singleCombo) | async | capitalizeFirst}}</option>
   </select>
 </div>

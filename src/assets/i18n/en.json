@@ -2,8 +2,15 @@
     "GAME": {
       "FIELDS": {
         "GENRE": {
+          "EMPTY_VALUE": "Please, wait...",
           "NAME": "Genre",
           "RPG": "Roleplay Game"
+        }
+      },
+        "GENERATION": {
+          "EMPTY_VALUE": "Please, wait...",
+          "NAME": "Generation",
+          "4ª Generation": "4ª Generation"
         }
       }
     }
