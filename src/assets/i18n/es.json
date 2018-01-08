@@ -1,0 +1,10 @@
+{
+    "GAME": {
+      "FIELDS": {
+        "GENRE": {
+          "NAME": "Género",
+          "RPG": "Rol"
+        }
+      }
+    }
+}
